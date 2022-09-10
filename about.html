@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS Squad</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(215, 215, 215);
+            display: grid;
+        }
+        *{
+            margin : 0px;
+            padding : 0px;
+        }
+        .AllNav {
+            border: 1px solid black;
+            background-color: rgb(0, 0, 0);
+            height: 55px;
+            display: flex;
+            /* justify-content:space-between; */
+            width:100%;
+        }
+
+        .left {
+            position: relative;
+            /* border: 2px solid rgb(255, 255, 255); */
+            /* display: inline-block; */
+            width : 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left p{
+            color: white;
+            display: inline-block;
+        }
+        /* .left img {
+            width: 75px;
+        } */
+
+        .mid {
+            width: 70%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+        .right {
+            position: relative;
+            right: 0px;
+            width: 14%;
+            /* border: 2px solid white; */
+            /* justify-content: center; */
+            display: inline;
+            align-content: center;
+            position: fixed;
+            padding : 10px 0px;
+        }
+
+        .navbar {
+            display: inline-block;
+            /* display: flex;    */
+            /* flex-wrap: wrap; */
+            /* justify-content: space-between; */
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+            padding-right: 50px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            /* padding: 20px 20px; */
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: yellow;
+        }
+
+        .btn {
+            background-color: rgb(10, 10, 10);
+            height: 30px;
+            width: 80px;
+            margin-left: 10px;
+            color: white;
+            border: 1px solid yellow;
+            border-radius: 4px;
+            font-size: 15px;
+            /* position:sticky; */
+        }
+
+        .btn:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(167, 167, 167);
+        }
+
+        .cart {
+            background-color: rgb(10, 10, 10);
+            padding: 5px 24px;
+            border: 1px solid yellow;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            margin-left: 10px;
+            /* position:sticky; */
+        }
+
+        .cart:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(167, 167, 167);
+            font-size: 16px;
+        }
+
+
+        .mid ul li:hover .divdrop {
+            display: block;
+            position: absolute;
+        }
+
+        .mid ul li:hover .divdrop ul {
+            margin: 4px -37px;
+            display: block;
+        }
+
+        .mid ul li:hover .divdrop ul li {
+            color: white;
+            display: block;
+            padding: 5px 10px;
+            margin-left: 10px;
+            background-color: black;
+        }
+
+        .divdrop {
+            display: none;
+            margin-top: 0px;
+        }
+
+        /* Navigation Bar End */
+
+        .aus-Content {
+            border: 3px solid blue;
+            border-style: dotted;
+            height: 100%;
+            width: 99%; 
+        }
+
+        .left-block {
+            /* border: 1px solid black; */
+            /* background-color: rgb(156, 156, 156); */
+            
+            display: inline-block;
+            width: 200px;
+            box-sizing: border-box;
+            margin-top: 0px;
+            position: relative;
+            padding-top: 100px;
+            padding-bottom: 111px;
+        }
+
+        .left-about {
+            /* border: 1px solid brown; */
+            display: block;
+            margin-left: 30px;
+        }
+
+        .left-about h4 {
+            display: inline-block;
+            margin-bottom: 10px;
+            margin-left: 15px;
+        }
+
+           .left-about li {
+            display: inline-block;
+            padding-left: 0px;
+            padding-bottom: 8px;
+        }
+        .left-about li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .left-contact {
+            /* border: 1px solid hotpink; */
+            display: block;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+
+        .left-contact h4 {
+            display: inline-block;
+            margin-bottom: 10px;
+            margin-left: 15px;
+
+        }
+
+        .left-contact ul li {
+            display: inline-block;
+        }
+
+        .left-contact li a{
+            text-decoration: none;
+            color: black;
+        }
+        .vertical {
+            border :2px solid rgb(0, 0, 0);
+            display: inline;
+            padding-top: 2708px;
+            margin-left: 0px;
+            padding-bottom: 136px;
+        }
+
+        .description {
+            position: absolute;
+            padding-top: 75px;
+            /* border: 1px solid rebeccapurple; */
+            display: inline-block;
+            box-sizing: border-box;
+            width: 1000px;
+            margin-left: 40px;
+            padding-left: 100px;
+            padding-bottom: 43px;
+        }
+
+        .description h2 {
+            display: inline;
+            margin : 0px 350px;
+            font-size: 35px;
+        }
+
+        .description p {
+            display: inline-block;
+        }
+
+
+
+        /* Last Block Start */
+        .last-block {
+            border: 1px solid palegreen;
+            padding: 0px 100px;
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+            margin-bottom: 0px;
+            /* display: inline-block; */
+            display: grid;
+        }
+
+        .all {
+            /* border: 1px solid rgb(0, 255, 0); */
+            padding: 0px 55px;
+            margin-bottom: 0px;
+            padding-top: 20px;
+            /* display: flex; */
+        }
+
+        .about-us {
+            /* border: 1px solid red; */
+            padding: 15px 20px;
+            display: inline-block;
+            margin-right: 30px;
+            color: rgb(202, 202, 202);
+        }
+
+        .about-us ul {
+            padding-left: 15px;
+        }
+
+        .about-us li a {
+            color: grey;
+            text-decoration: none;
+        }
+
+        .contact-us {
+            /* border: 1px solid yellow; */
+            display: inline-block;
+            padding: 15px 20px;
+            color: rgb(202, 202, 202);
+        }
+
+        .contact-us ul {
+            padding-left: 15px;
+        }
+
+        .contact-us li a {
+            color: grey;
+            text-decoration: none;
+        }
+
+        .connect-with-us {
+            /* border: 1px solid orchid; */
+            display: inline-block;
+            padding: 0px 0px;
+            margin-left: 300px;
+            margin-top: 10px;
+            padding-bottom: 31px;
+
+        }
+
+        .connect-with-us h4 {
+            margin-top: 0px;
+            margin-bottom: -9px;
+        }
+
+        .connect-with-us ul {
+            padding-left: 0px;
+            margin-bottom: 0px;
+            display: flex;
+        }
+
+        .connect-with-us li {
+            display: inline;
+            margin: 0px 10px;
+        }
+
+        .Metalogo {
+            width: 65px;
+        }
+
+        .Llogo {
+            width: 45px;
+            border: 1px solid yellow;
+            border-radius: 100%;
+            margin-bottom: 5px;
+        }
+
+        .copyright p {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        /* Last Block End */
+
+
+        .goto-up {
+            position: fixed;
+            display: inline;
+            border: 3px solid red;
+            background-color: rgb(97, 255, 255);
+            padding: 15px 5px;
+            border-radius: 100%;
+            right: 30px;
+            width: 67px;
+            bottom: 50px;
+            float: right;
+        }
+
+        .goto-up a {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <a name="home"> -->
+    <div class="AllNav">
+        <div class="left">
+            <!-- <a href="home.html"><img src="Logo1.jpg" alt="Logo"></a> -->
+            <p>BTS</p>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="design.html">Design<i class="fas fa-caret-down"></i></a>
+                    <div class="divdrop">
+                        <ul>
+                            <li><a href="#">BTS</a></li>
+                            <li><a href="#">Shinchan</a></li>
+                            <li><a href="#">Korean</a></li>
+                            <li><a href="#">Japanese</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn"><strong>Login</strong></button>
+            <span class="cart"><strong>Cart</strong></span>
+        </div>
+    </div>
+    <!-- </a> -->
+    <!-- NavBar End -->
+
+    <!-- About us Description Start-->
+    <div class="aus-Content">
+        <div class="left-block">
+            <div class="left-about">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="about.html">Cloth Material</a></li>
+                    <!-- <li></li> -->
+                </ul>
+            </div>
+            <hr>
+            <div class="left-contact">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="vertical">
+
+        </div>
+
+
+        <div class="description">
+            <h2>About us</h2>
+            <p>Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, aliquam, atque id repellendus odit
+                sapiente unde dicta exercitationem inventore sit dolore eaque hic corrupti sequi cum nulla, quod
+                eligendi. Culpa sit iure libero enim odio pariatur corporis ratione repudiandae officia? ipsum dolor sit
+                amet consectetur adipisicing elit. Vel totam eius minima corrupti molestiae
+                deserunt numquam hic doloremque. Itaque dolor ratione quibusdam praesentium quidem eaque error rem
+                doloribus consequuntur ipsa.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cupiditate vero distinctio officia
+                repellendus, mollitia, soluta consectetur molestias sapiente ipsum fuga porro! Maiores recusandae
+                dolores ab dolorum omnis eos quam quaerat non, animi, hic repellat! Corrupti assumenda eaque at esse ex
+                cumque voluptate eius! Quisquam a quae vitae reprehenderit numquam.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto dignissimos ea atque excepturi aut
+                molestias perspiciatis vero neque, dolorem ipsum minus reiciendis nesciunt. Quod qui nisi dolorum eius.
+                Eum cupiditate fugit sapiente debitis. Reprehenderit quisquam consectetur maxime vel libero molestiae
+                perferendis nesciunt? Perspiciatis voluptatum laboriosam provident nisi rem, veniam modi.</p>
+        </div>
+    </div>
+    <!-- About us Description End-->
+
+
+
+</body>
+
+</html>
+<!-- --------------------------------------------------------------------- -->
+
+
+<!-- Last Block Start -->
+<!-- <div class="last-block">
+        <div class="all">
+            <div class="about-us">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="about.html">Questions</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <h4>Customer Service</h4>
+                <ul>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="contact.html">Email us</a></li>
+                </ul>
+            </div>
+            <div class="connect-with-us">
+                <h4>Connect With us</h4>
+                <div class="CWUimage">
+                    <ul>
+                        <li><a href="https://www.instagram.com/" target="_blank"><img src="connectWithUs/IGlogo.png"
+                                    alt="Instagram" class="Metalogo"></a></li>
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="connectWithUs/Fblogo.png"
+                                    alt="Facebook" class="Metalogo"></a></li>
+                        <li><a href="https://in.linkedin.com/" target="_blank"><img src="connectWithUs/Lilogo.webp"
+                                    alt="LinkedIn" class="Llogo"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright © 2022 Bhavy™ ©. All rights reserved</p>
+        </div>
+        <div class="goto-up">
+            <a href="#home">Go to Top</a>
+        </div>
+    </div> -->
+<!-- Last Block End  -->
